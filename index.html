@@ -1,112 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos López | Portafolio Profesional</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: 'Open Sans', sans-serif;
-            background: #F8F9FA;
-            color: #14213D;
-        }
-
-        .container {
-            padding: 40px 25px;
-            max-width: 800px;
-        }
-
-        .logo {
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 30px;
-            border-radius: 50%;
-            background: #14213D;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 42px;
-            font-weight: 700;
-            color: #55ACE0;
-        }
-
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 42px;
-            margin-bottom: 8px;
-        }
-
-        .role {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            color: #3989BA;
-            margin-bottom: 30px;
-        }
-
-        .slogan {
-            font-size: 22px;
-            margin-bottom: 45px;
-        }
-
-        .construction {
-            display: inline-block;
-            padding: 12px 28px;
-            border: 2px solid #3989BA;
-            border-radius: 30px;
-            color: #14213D;
-            font-weight: 600;
-        }
-
-        footer {
-            margin-top: 60px;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portafolio profesional de Carlos López, desarrollador de software. Proyectos, habilidades y contacto.">
+<title>Carlos López | Software Developer</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
-
 <body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="header" id="top"><nav class="nav container" aria-label="Navegación principal">
+<a class="brand" href="#inicio" aria-label="Carlos López, inicio"><span class="brand-icon">CL<span class="bracket">&lt;/&gt;</span></span><span>Carlos<span class="dot">.</span>López</span></a>
+<button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">☰</button>
+<div class="nav-links" id="navLinks"><a href="#sobre-mi" data-i18n="navAbout">Sobre mí</a><a href="#habilidades" data-i18n="navSkills">Habilidades</a><a href="#proyectos" data-i18n="navProjects">Proyectos</a><a href="#trayectoria" data-i18n="navJourney">Trayectoria</a><a href="#contacto" data-i18n="navContact">Contacto</a></div>
+<div class="nav-actions"><button id="langBtn" class="lang-btn" aria-label="Switch language" aria-pressed="false">EN <span aria-hidden="true">↔</span></button><a class="nav-cta" href="#contacto" data-i18n="letsTalk">Conversemos</a></div>
+</nav></header>
+<main id="main">
+<section class="hero container" id="inicio"><div class="hero-copy reveal"><div class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">PORTAFOLIO PROFESIONAL · EN DESARROLLO</span></div><h1 data-i18n="heroTitle">Transformo ideas en <em>soluciones digitales.</em></h1><p class="hero-sub" data-i18n="heroText">Soy Carlos López, desarrollador de software en formación. Me apasiona crear experiencias útiles, aprender nuevas tecnologías y resolver problemas con código.</p><div class="hero-buttons"><a class="btn btn-primary" href="#proyectos" data-i18n="viewProjects">Explorar proyectos <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#contacto" data-i18n="contactMe">Contáctame</a></div><div class="hero-social"><a href="https://github.com/CarloLopez23" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/carloslopezdelao-dev/" target="_blank" rel="noopener">LinkedIn ↗</a><span data-i18n="location">Costa Rica · Remoto</span></div></div><div class="hero-visual reveal" aria-label="Ilustración vectorial de un entorno de desarrollo"><div class="glow"></div><div class="terminal"><div class="terminal-bar"><span></span><span></span><span></span><strong>carlos-lopez / portfolio</strong></div><div class="code"><p><span class="pink">const</span> <span class="blue">developer</span> = {</p><p class="indent"><span class="mint">name</span>: <span class="yellow">'Carlos López'</span>,</p><p class="indent"><span class="mint">focus</span>: <span class="yellow">'Software Development'</span>,</p><p class="indent"><span class="mint">mindset</span>: <span class="yellow">'Keep learning'</span>,</p><p class="indent"><span class="mint">projects</span>: <span class="yellow">3</span>,</p><p>};</p><p class="terminal-last"><span class="mint">//</span> <span data-i18n="terminalComment">Construyendo mi próximo capítulo...</span><span class="cursor">▋</span></p></div></div><div class="floating-pill pill-top">✦ <span data-i18n="pillCreative">Creatividad + Código</span></div><div class="floating-pill pill-bottom">&lt;/&gt; <span data-i18n="pillBuilding">En constante evolución</span></div></div></section>
+<div class="ticker"><div class="container ticker-inner"><span>JAVA</span><span>•</span><span>C++</span><span>•</span><span>DESARROLLO WEB</span><span>•</span><span>UX / UI</span><span>•</span><span>GITHUB</span><span>•</span><span>PROBLEM SOLVING</span></div></div>
+<section class="section container" id="sobre-mi"><div class="section-heading reveal"><span class="section-number">01 / <span data-i18n="aboutKicker">CONÓCEME</span></span><h2 data-i18n="aboutTitle">Más que líneas de código.</h2></div><div class="about-grid"><div class="about-card reveal"><div class="about-symbol">&lt;CL/&gt;</div><p data-i18n="aboutQuote">“Código que convierte ideas en soluciones.”</p><span data-i18n="aboutSignature">Mi filosofía de trabajo</span></div><div class="about-text reveal"><p data-i18n="aboutP1">Mi nombre es Carlos Andrés López De La O. Curso Ingeniería del Software en la Universidad CENFOTEC y desarrollo proyectos que me permiten llevar los conocimientos del aula a aplicaciones prácticas.</p><p data-i18n="aboutP2">Me interesa construir software claro, útil y fácil de utilizar. Valoro la responsabilidad, la colaboración, la perseverancia y el aprendizaje continuo.</p><div class="mini-facts"><div><strong>03</strong><span data-i18n="factProjects">Proyectos académicos</span></div><div><strong>ES / EN</strong><span data-i18n="factLanguages">Comunicación bilingüe</span></div></div></div></div></section>
+<section class="section section-alt" id="habilidades"><div class="container"><div class="section-heading reveal"><span class="section-number">02 / <span data-i18n="skillsKicker">MI CAJA DE HERRAMIENTAS</span></span><h2 data-i18n="skillsTitle">Tecnología y mentalidad.</h2><p data-i18n="skillsIntro">Conocimientos en desarrollo de software y habilidades humanas que aplico a cada desafío.</p></div><div class="skills-grid"><article class="skill-card reveal"><span class="skill-icon">{ }</span><h3 data-i18n="skillCode">Programación</h3><p>Java · C++ · <span data-i18n="fundamentals">Fundamentos de programación</span></p></article><article class="skill-card reveal"><span class="skill-icon">⌘</span><h3 data-i18n="skillWeb">Desarrollo web</h3><p>HTML · CSS · JavaScript <span class="learning" data-i18n="inProgress">(en desarrollo)</span></p></article><article class="skill-card reveal"><span class="skill-icon">↗</span><h3 data-i18n="skillTools">Herramientas</h3><p>GitHub · VS Code · <span data-i18n="responsive">Diseño responsivo</span></p></article><article class="skill-card reveal"><span class="skill-icon">✳</span><h3 data-i18n="skillSoft">Habilidades blandas</h3><p data-i18n="softText">Trabajo en equipo · Responsabilidad · Resolución de problemas</p></article></div></div></section>
+<section class="section container" id="proyectos"><div class="section-heading reveal"><span class="section-number">03 / <span data-i18n="projectsKicker">TRABAJO SELECCIONADO</span></span><h2 data-i18n="projectsTitle">Proyectos que cuentan mi historia.</h2><p data-i18n="projectsIntro">Explora tres proyectos académicos. Filtra por categoría y abre cada tarjeta para conocer su alcance.</p></div><div class="filter-bar reveal" role="group" aria-label="Filtrar proyectos"><button class="filter active" data-filter="all" aria-pressed="true" data-i18n="filterAll">Todos</button><button class="filter" data-filter="app" aria-pressed="false" data-i18n="filterApps">Aplicaciones</button><button class="filter" data-filter="game" aria-pressed="false" data-i18n="filterGames">Juegos</button><button class="filter" data-filter="web" aria-pressed="false" data-i18n="filterWeb">Web</button></div><div class="project-grid" id="projectGrid"><article class="project-card reveal" data-category="app"><div class="project-art art-rest"><span class="art-icon">▤</span><span class="art-label">RESTAURANT SYSTEM</span></div><div class="project-content"><div class="project-meta">01 · MAY–AUG 2026 <span>APP</span></div><h3 data-i18n="restaurantTitle">Gestión de restaurante</h3><p data-i18n="restaurantDesc">Proyecto académico enfocado en organizar procesos de un restaurante mediante una aplicación de gestión.</p><button class="details-btn" data-project="restaurant" data-i18n="viewDetails">Ver detalles ↗</button></div></article><article class="project-card reveal" data-category="game"><div class="project-art art-pokemon"><span class="art-icon">◈</span><span class="art-label">ONLINE GAME</span></div><div class="project-content"><div class="project-meta">02 · MAY–AUG 2024 <span>GAME</span></div><h3 data-i18n="pokemonTitle">Juego en línea de Pokémon</h3><p data-i18n="pokemonDesc">Experiencia académica de programación y lógica aplicada al desarrollo de un juego en línea.</p><button class="details-btn" data-project="pokemon" data-i18n="viewDetails">Ver detalles ↗</button></div></article><article class="project-card reveal" data-category="web"><div class="project-art art-store"><span class="art-icon">▣</span><span class="art-label">FOOTWEAR STORE</span></div><div class="project-content"><div class="project-meta">03 · MAY–AUG 2025 <span>WEB</span></div><h3 data-i18n="storeTitle">Tienda virtual de calzado</h3><p data-i18n="storeDesc">Proyecto de comercio electrónico centrado en la presentación de productos y la experiencia del usuario.</p><button class="details-btn" data-project="store" data-i18n="viewDetails">Ver detalles ↗</button></div></article></div><div class="section-note" data-i18n="projectNote">Las tecnologías específicas y los enlaces a repositorios de cada proyecto se agregarán después de su verificación.</div></section>
+<section class="section section-alt" id="trayectoria"><div class="container"><div class="section-heading reveal"><span class="section-number">04 / <span data-i18n="journeyKicker">MI RECORRIDO</span></span><h2 data-i18n="journeyTitle">Aprender, construir, mejorar.</h2></div><div class="timeline"><div class="timeline-item reveal"><div class="timeline-year">2024</div><div><h3 data-i18n="timeline1Title">Primeros proyectos de programación</h3><p data-i18n="timeline1Desc">Desarrollo del juego en línea de Pokémon como parte de mi formación académica.</p></div></div><div class="timeline-item reveal"><div class="timeline-year">2025</div><div><h3 data-i18n="timeline2Title">Experiencia con comercio electrónico</h3><p data-i18n="timeline2Desc">Creación de una tienda virtual de calzado y exploración de experiencias de usuario.</p></div></div><div class="timeline-item reveal"><div class="timeline-year">2026</div><div><h3 data-i18n="timeline3Title">Aplicaciones y marca profesional</h3><p data-i18n="timeline3Desc">Proyecto de gestión para restaurantes y desarrollo de este portafolio interactivo.</p></div></div></div><a class="btn btn-secondary resume-btn" href="assets/CV_Carlos_Lopez.pdf" download data-i18n="downloadCv">Descargar CV (PDF) ↓</a><p class="resume-note" data-i18n="resumeNote">El archivo de CV es una versión provisional de referencia y puede sustituirse por el PDF definitivo.</p></div></section>
+<section class="section container" id="contacto"><div class="section-heading reveal"><span class="section-number">05 / <span data-i18n="contactKicker">HABLEMOS</span></span><h2 data-i18n="contactTitle">¿Construimos algo interesante?</h2><p data-i18n="contactIntro">Estoy abierto a oportunidades profesionales, colaboración y conversaciones sobre tecnología.</p></div><div class="contact-grid"><div class="contact-info reveal"><a href="mailto:lapezcharlie@gmail.com">✉ &nbsp; lapezcharlie@gmail.com</a><a href="https://www.linkedin.com/in/carloslopezdelao-dev/" target="_blank" rel="noopener">↗ &nbsp; LinkedIn</a><a href="https://github.com/CarloLopez23" target="_blank" rel="noopener">⌘ &nbsp; GitHub</a><a class="whatsapp-link" href="https://wa.me/50663134880" target="_blank" rel="noopener" data-i18n="whatsapp">↗ &nbsp; Conversar por WhatsApp</a></div><form id="contactForm" class="contact-form reveal" novalidate><label for="name" data-i18n="labelName">Nombre</label><input id="name" name="name" required minlength="2" autocomplete="name" placeholder="Tu nombre"><label for="email" data-i18n="labelEmail">Correo electrónico</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="correo@ejemplo.com"><label for="message" data-i18n="labelMessage">Mensaje</label><textarea id="message" name="message" required minlength="10" rows="4" placeholder="Cuéntame tu idea..."></textarea><button class="btn btn-primary" type="submit" data-i18n="sendMessage">Preparar mensaje ↗</button><p id="formStatus" class="form-status" role="status" aria-live="polite"></p><small data-i18n="formNote">Versión de avance: valida los campos y abre tu aplicación de correo; el envío automático está pendiente de integración.</small></form></div></section>
+</main><footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Carlos López · <span data-i18n="footerMade">Diseñado y desarrollado desde cero</span></span><span data-i18n="footerTag">Código que convierte ideas en soluciones.</span></div></footer>
+<button class="scroll-top" id="scrollTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
+<dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle"><button id="closeModal" class="modal-close" aria-label="Cerrar">×</button><span id="modalDate" class="modal-date"></span><h2 id="modalTitle"></h2><p id="modalDesc"></p><div class="modal-detail"><strong id="modalStatusLabel">Estado:</strong> <span id="modalStatus"></span></div><button class="btn btn-secondary" id="modalOk" data-i18n="close">Cerrar</button></dialog>
+</body></html>
 
-    <main class="container">
-
-        <div class="logo">
-            C&lt;/&gt;
-        </div>
-
-        <h1>Carlos López</h1>
-
-        <p class="role">
-            SOFTWARE DEVELOPER | FULL STACK
-        </p>
-
-        <p class="slogan">
-            Código que convierte ideas en soluciones.
-        </p>
-
-        <div class="construction">
-            Portafolio en construcción
-        </div>
-
-        <footer>
-            © 2026 Carlos López
-        </footer>
-
-    </main>
-
-</body>
 </html>
