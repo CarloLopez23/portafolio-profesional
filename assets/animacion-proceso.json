@@ -1,0 +1,17 @@
+{
+  "intervalMs": 1800,
+  "steps": [
+    {
+      "es": "IDEA",
+      "en": "IDEA"
+    },
+    {
+      "es": "CÓDIGO",
+      "en": "CODE"
+    },
+    {
+      "es": "SOLUCIÓN",
+      "en": "SOLUTION"
+    }
+  ]
+}
